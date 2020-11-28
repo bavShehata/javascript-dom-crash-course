@@ -71,3 +71,32 @@ console.log(header);
 
 // change the style 
 header.style.borderBottom = 'solid 1px red';
+
+
+// GETELEMENTBYCLASSNAME
+
+// get all the element with class name list-group-item(HTMLCollection)
+let items = document.getElementsByClassName('list-group-item');
+
+console.log(items);
+console.log(items[0]);
+console.log(items[1]);
+console.log(items[2]);
+console.log(items[3]);
+items[0].textContent = 'ok';
+items[1].innerHTML = 'no ok for now';
+console.log(items[0]);
+console.log(items[1]);
+items[0].style.backgroundColor = 'yellow';
+items[0].textContent = 'Item 1';
+items[1].innerHTML = 'Item 2';
+
+// this will give eror
+// items.style.backgroundColor = '#4f4f4';
+
+
+// iterate over and style all the item
+
+for (let index = 0; index < items.length; index++) {
+    items[index].style.backgroundColor = '#4f4f4';
+}
