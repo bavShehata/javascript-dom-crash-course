@@ -100,3 +100,31 @@ items[1].innerHTML = 'Item 2';
 for (let index = 0; index < items.length; index++) {
     items[index].style.backgroundColor = '#4f4f4';
 }
+
+
+// GETELEMENTBYTAGENAME
+
+
+let li = document.getElementsByTagName('li');
+
+console.log(li);
+
+console.log(li[0]);
+console.log(li[1]);
+console.log(li[2]);
+console.log(li[3]);
+
+li[0].textContent = 'tag ok';
+li[1].innerHTML = 'tag is not ok for now';
+console.log(li[0]);
+console.log(li[1]);
+
+li[0].style.backgroundColor = 'blue';
+li[0].textContent = 'li 1';
+li[1].innerHTML = 'li 2';
+
+// iterate over and style all the li(list)
+
+for (let index = 0; index < items.length; index++) {
+    li[index].style.backgroundColor = 'lightblue';
+}
