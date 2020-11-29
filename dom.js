@@ -191,3 +191,93 @@ for (let index = 0; index < odd.length; index++) {
     even[index].style.backgroundColor = '#ccc';
 
 }
+
+
+
+// TRAVERSING THE DOM //
+
+
+let itemList = document.querySelector('#items');
+
+console.log(itemList);
+
+// parentNode
+
+// get the parentNode
+console.log(itemList.parentNode);
+
+// get the  grandparentNode
+console.log(itemList.parentNode.parentNode);
+
+// style the parent node
+itemList.parentNode.style.backgroundColor = '#f4f4f4';
+
+
+// parentElemnt
+
+// Note :(parentElemnt and parentNode are almost same)
+
+// get the parentNode
+console.log(itemList.parentElement);
+
+// get the  grandparentNode 
+console.log(itemList.parentElement.parentElement);
+
+// style the parent node
+itemList.parentElement.style.backgroundColor = '#f4f4f4';
+
+// childNode
+
+//  get the childNode
+console.log(itemList.childNodes);
+
+// get the  grandchildtNode
+console.log(itemList.childNodes.childNodes);
+
+
+// children
+
+//  get the children
+console.log(itemList.childre);
+console.log(itemList.children[2]);
+console.log(itemList.children[1]);
+console.log(itemList.children[3]);
+
+
+// firstChild
+
+// not good idea to use this
+console.log(itemList.firstChild);
+
+
+// firstElementChild
+
+// good idea to use this
+console.log(itemList.firstElementChild);
+
+// lastChild
+
+// not good idea to use this
+console.log(itemList.lastChild);
+
+// lastElementChild
+
+//good idea to use this
+console.log(itemList.lastElementChild);
+
+
+// nextsibling
+
+console.log(itemList.Sibling);
+
+// nextElementSibling
+
+console.log(itemList.nextElementSibling);
+
+// previousSibling
+
+console.log(itemList.previousSibling);
+
+// previousElementSibling
+
+console.log(itemList.previousElementSibling);
