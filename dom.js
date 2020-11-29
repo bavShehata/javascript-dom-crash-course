@@ -104,7 +104,6 @@ for (let index = 0; index < items.length; index++) {
 
 // GETELEMENTBYTAGENAME
 
-
 let li = document.getElementsByTagName('li');
 
 console.log(li);
@@ -165,3 +164,30 @@ secondItem.style.color = 'yellow';
 
 //  style the last item
 lastItem.style.color = 'green';
+
+
+
+// QUERY SELECTOR ALL // 
+
+// this return us all the elment with id name title
+let titles = document.querySelectorAll('.title');
+
+console.log(titles);
+
+// now have nodeList(array of titles)
+// titles[0].textContent = 'Hello again';
+
+// titles[1].textContent = 'nice to meet You';
+
+// get all odd list element
+let odd = document.querySelectorAll('li:nth-child(odd');
+
+
+// get all even list element
+let even = document.querySelectorAll('li:nth-child(even');
+
+// loop over each even li and styled
+for (let index = 0; index < odd.length; index++) {
+    even[index].style.backgroundColor = '#ccc';
+
+}
