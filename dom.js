@@ -1,3 +1,9 @@
+/* ==========================================
+   dom.js
+   Course:  JavaScript DOM Crash Course
+   ========================================== */
+
+
 // alert("test");
 
 // EXAMINE THE DOCUMENT OBJECT //
@@ -332,7 +338,6 @@ newDiv.style.fontSize = '30px';
 newDiv.innerHTML = '';
 
 
-
 // EVENT // 
 
 //  EventListener  // 
@@ -370,4 +375,40 @@ const buttonClickFunction = function(e) {
 };
 
 
-let buttonClick = document.getElementById('button').addEventListener('click', buttonClickFunction);
+// function which will tell us Even Parameters type
+
+function runEvent(e) {
+
+    console.log('EVEBT TYPE : ' + e.type);
+}
+
+let runEventButton = document.getElementById('button');
+
+runEventButton.addEventListener('click', runEvent);
+
+runEventButton.addEventListener('dbClick', runEvent);
+
+runEventButton.addEventListener('mousedown', runEvent);
+
+runEventButton.addEventListener('mouseup', runEvent);
+
+
+let box = document.getElementById('box');
+
+box.addEventListener('mouseenter', runEvent);
+box.addEventListener('mouseleave', runEvent);
+
+box.addEventListener('mouseover', runEvent);
+box.addEventListener('mouseout', runEvent);
+
+box.addEventListener('mousemove', runEvent);
+
+let itemInput = document.querySelector('input[type="text"]');
+let form = document.querySelector('form');
+console.log(itemInput);
+
+itemInput.addEventListener('keydown', runEvent);
+itemInput.addEventListener('keyup', runEvent);
+
+itemInput.addEventListener('focus', runEvent);
+itemInput.addEventListener('blur', runEvent);
