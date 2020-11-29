@@ -301,6 +301,8 @@ console.log(newDiv);
 newDiv.id = 'helloID1';
 console.log(newDiv);
 
+
+
 // let add also atr to the div
 newDiv.setAttribute('title', 'hello div');
 console.log(newDiv);
@@ -328,3 +330,44 @@ container.insertBefore(newDiv, h1);
 newDiv.innerHTML = 'Hello WOrld';
 newDiv.style.fontSize = '30px';
 newDiv.innerHTML = '';
+
+
+
+// EVENT // 
+
+//  EventListener  // 
+
+
+//  when button been clicked call the flowing function
+let button = document.getElementById('button').addEventListener('click', function() {
+    document.getElementById('header-title').innerHTML = 'Change';
+    console.log(1234);
+});
+
+
+
+const buttonFunction = function() {
+    document.getElementById('header-title').innerHTML = 'Item lister';
+    console.log('buttonFunction is been called');
+
+};
+
+//  when button been clicked call the flowing function 
+let buttonTest = document.getElementById('button').addEventListener('click', buttonFunction);
+
+
+// passing even  Parameters to function
+
+const buttonClickFunction = function(e) {
+    console.log(e);
+    console.log(e.type);
+    console.log(e.target);
+    console.log(e.target.id);
+    console.log(e.target.className);
+    console.log(e.clientX);
+    console.log(e.clientY);
+
+};
+
+
+let buttonClick = document.getElementById('button').addEventListener('click', buttonClickFunction);
