@@ -281,3 +281,50 @@ console.log(itemList.previousSibling);
 // previousElementSibling
 
 console.log(itemList.previousElementSibling);
+
+
+// createElement
+
+
+// create div
+
+// we have created div
+let newDiv = document.createElement('div');
+
+console.log(newDiv);
+
+// let add class to the div
+newDiv.className = 'helo';
+console.log(newDiv);
+
+// let add also ID to the div
+newDiv.id = 'helloID1';
+console.log(newDiv);
+
+// let add also atr to the div
+newDiv.setAttribute('title', 'hello div');
+console.log(newDiv);
+
+
+// let add text to our div
+
+// create text node
+let newDivText = document.createTextNode("hello new div this is the text");
+
+
+// add text to div
+newDiv.appendChild(newDivText);
+console.log(newDiv);
+
+// now our div is ready let added to the Dom
+
+let container = document.querySelector('header .container');
+
+let h1 = document.querySelector('header h1');
+console.log(h1);
+
+// now our div is been inserted just before the h1
+container.insertBefore(newDiv, h1);
+newDiv.innerHTML = 'Hello WOrld';
+newDiv.style.fontSize = '30px';
+newDiv.innerHTML = '';
