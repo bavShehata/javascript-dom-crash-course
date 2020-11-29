@@ -4,6 +4,8 @@ let form = document.getElementById('addForm');
 // select the list by id name ('items' and store in variable itemList
 let itemList = document.getElementById('items');
 
+//  select the input by id name ('filter' and store in variable filter
+let filter = document.getElementById('filter');
 
 // function to addItem 
 
@@ -51,10 +53,26 @@ const removeItem = function(e) {
             let li = e.target.parentElement
             itemList.removeChild(li);
         }
-
-
     }
 };
+
+
+// function to Filter items
+
+const filterItem = function(e) {
+    // convert text to lowercase
+    let text = e.target.value.toLowerCase();
+    console.log(text);
+
+    // get list
+    let items = itemList.getElementsByTagName('li');
+
+    // convert this HTMLCOLECTION to an array
+    Array.form(items).forEach(function(item) {
+        let itemeName = item.firstChild.textContent;
+        console.log(itemeName);
+    });
+}
 
 // form submit even  //
 
@@ -65,3 +83,8 @@ form.addEventListener('submit', addItem);
 
 // on click call  removeItem function
 itemList.addEventListener('click', removeItem);
+
+// Filter event
+
+// on keyup call  filterItem function
+filter.addEventListener('keyup', filterItem);
