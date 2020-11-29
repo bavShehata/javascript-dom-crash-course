@@ -1,13 +1,19 @@
-// select the form by id name ('addForm' and store in variable form
+/* ==========================================
+    Final Project simple interface using just vanilla javascrip
+   finalProject.js
+   Course:  JavaScript DOM Crash Course
+   ========================================== */
+
+// select element by id name('addForm') and store in variable form
 let form = document.getElementById('addForm');
 
-// select the list by id name ('items' and store in variable itemList
+// select element by id name('items') and store in variable itemList
 let itemList = document.getElementById('items');
 
-//  select the input by id name ('filter' and store in variable filter
+//  select the input by id name('filter') and store in variable filter
 let filter = document.getElementById('filter');
 
-// function to addItem 
+// function to addItem
 
 const addItem = function(e) {
     // prevent the default behavior
@@ -21,6 +27,8 @@ const addItem = function(e) {
 
     // Add class to the li emlement
     li.className = 'list-group-item';
+
+    // for testing
     // console.log(li);
 
     // Add text node with input value
@@ -29,7 +37,7 @@ const addItem = function(e) {
     // create the delete button element
     let deleteButton = document.createElement('button');
 
-    // Add classes to detlete button
+    // Add classes to the detlete button
     deleteButton.className = 'btn btn-danger btn-sm float-right delete';
 
     // Append Text node to detlete button
@@ -48,14 +56,13 @@ const removeItem = function(e) {
     // delete only the class with name delete
     if (e.target.classList.contains('delete')) {
         // confirm first before delete
-        if (confirm('Are You Sure?')) {
+        if (confirm('Are You Sure : ?')) {
             // remove the li from the list
             let li = e.target.parentElement
             itemList.removeChild(li);
         }
     }
 };
-
 
 // function to Filter items
 
@@ -64,17 +71,31 @@ const filterItem = function(e) {
     let text = e.target.value.toLowerCase();
     console.log(text);
 
-    // get list
+    // get list(get all the li)
     let items = itemList.getElementsByTagName('li');
 
+    // for tesing
+    // console.log(items);
+
     // convert this HTMLCOLECTION to an array
-    Array.form(items).forEach(function(item) {
+    Array.from(items).forEach(function(item) {
         let itemeName = item.firstChild.textContent;
-        console.log(itemeName);
+
+        // for tesing
+        //  console.log(itemeName);
+
+        // compare itemName with search button tag
+        if (itemeName.toLowerCase().indexOf(text) != -1) {
+            // search match
+            item.style.display = 'block';
+        } else {
+            // search not match
+            item.style.display = 'none';
+        }
     });
 }
 
-// form submit even  //
+// form submit even
 
 // on sumbit call  addItem function
 form.addEventListener('submit', addItem);
@@ -86,5 +107,5 @@ itemList.addEventListener('click', removeItem);
 
 // Filter event
 
-// on keyup call  filterItem function
+// on keyup call filterItem function
 filter.addEventListener('keyup', filterItem);
