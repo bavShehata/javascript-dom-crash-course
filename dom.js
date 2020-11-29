@@ -128,3 +128,40 @@ li[1].innerHTML = 'li 2';
 for (let index = 0; index < items.length; index++) {
     li[index].style.backgroundColor = 'lightblue';
 }
+
+
+// QUERYSELECTOR //
+
+
+header = document.querySelector('#main-header')
+
+header.style.border = 'solid 1px blue';
+console.log(header);
+
+// if there more than one input will select the first one
+let input = document.querySelector('input');
+
+let submit = document.querySelector('input[type="submit"]');
+
+
+input.value = 'Sadam';
+submit.value = 'send';
+
+
+items = document.querySelector('.list-group-item');
+
+
+// this give us the last child
+let lastItem = document.querySelector('.list-group-item:last-child');
+
+// this give us the second child
+let secondItem = document.querySelector('.list-group-item:nth-child(2)');
+
+// style the first item
+items.style.color = 'red';
+
+// style the second item
+secondItem.style.color = 'yellow';
+
+//  style the last item
+lastItem.style.color = 'green';
