@@ -4,9 +4,8 @@ let form = document.getElementById('addForm');
 // select the list by id name ('items' and store in variable itemList
 let itemList = document.getElementById('items');
 
-// form submit even  //
 
-// function to addItem om the form
+// function to addItem 
 
 const addItem = function(e) {
     // prevent the default behavior
@@ -28,7 +27,6 @@ const addItem = function(e) {
     // create the delete button element
     let deleteButton = document.createElement('button');
 
-
     // Add classes to detlete button
     deleteButton.className = 'btn btn-danger btn-sm float-right delete';
 
@@ -40,8 +38,30 @@ const addItem = function(e) {
 
     // add the li to the list (Append li to list)
     itemList.appendChild(li);
-}
+};
 
+// function to remove items
+
+const removeItem = function(e) {
+    // delete only the class with name delete
+    if (e.target.classList.contains('delete')) {
+        // confirm first before delete
+        if (confirm('Are You Sure?')) {
+            // remove the li from the list
+            let li = e.target.parentElement
+            itemList.removeChild(li);
+        }
+
+
+    }
+};
+
+// form submit even  //
 
 // on sumbit call  addItem function
 form.addEventListener('submit', addItem);
+
+// Delete event
+
+// on click call  removeItem function
+itemList.addEventListener('click', removeItem);
