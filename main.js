@@ -59,8 +59,15 @@
 //  Elements - Get, Set Attribute Value
 
 // console.log(document.querySelector('div'))
-// let myImage = document.querySelector('img')
+let myImage = document.querySelector('img')
+
 // myImage.src = 'hhh'
 // myImage.alt = 'alt src'
 // console.log(myImage)
 // console.log(myImage.alt)
+
+// Elements - GetAttribute, SetAttribute
+
+myImage.setAttribute('src', 'http://placehold.it/300/300')
+
+console.log(myImage.getAttribute('src'))
