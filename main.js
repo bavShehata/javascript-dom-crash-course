@@ -95,3 +95,15 @@
 
 
 // Elements - ClassList [ Item, Contains, Length ]
+
+//  Elements - ClassList [ Add, Remove, Toggle ]
+
+// let button = document.querySelector('button')
+
+// button.onclick = function() {
+//     let div = document.getElementById('main')
+//     div.classList.add('newClass')
+//     console.log(div)
+// }
+
+// console.log(button)
