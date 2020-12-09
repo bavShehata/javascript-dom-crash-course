@@ -33,6 +33,25 @@
 // [9] document.body
 // [10] document.links
 
-let myDiv = document.getElementById('test')
-myDiv.innerHTML = document.title
-console.log(document.title)
+// let myDiv = document.getElementById('test')
+// myDiv.innerHTML = document.title
+// console.log(document.title)
+
+/*
+   innertText // Not Standard
+   outerText // Not Standard
+   innerHTML
+   textContent
+   // Get HTML Content 
+     Element.innerHTML
+
+     // Get text Content 
+     Element.innerContent
+*/
+
+// let div = document.getElementById('main')
+// console.log(div.innerHTML)
+// console.log(div.textContent)
+// div.innerHTML = "this is the new text"
+// console.log(div.innerHTML)
+// console.log(div.textContent)
