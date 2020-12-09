@@ -92,3 +92,6 @@
 // } else {
 //     console.log('no not has attriblue')
 // }
+
+
+// Elements - ClassList [ Item, Contains, Length ]
