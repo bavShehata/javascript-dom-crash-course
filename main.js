@@ -10,6 +10,7 @@ myDiv[0].innerHTML = 12
 myDiv[1].innerHTML = 'Changed by javascript'
 
 // [3] -  document.getElementsByClassName()
+// Not Compatible With IE 8
 
 myDiv = document.getElementsByClassName('testDiv')
 myDiv[0].innerHTML = 'test with Javscript'
@@ -17,6 +18,7 @@ myDiv[1].innerHTML = 'test with Javscript'
 
 
 // [4] -  document.querySelectorAll
+// Not Compatible With IE 8
 
 let myElement = document.querySelectorAll('div')
 console.log(myElement)
