@@ -27,6 +27,8 @@
 
 
 // Object Collection 
+
+
 // [5] -  document.title
 // [6] - document.images
 // [7] document.forms
@@ -36,6 +38,7 @@
 // let myDiv = document.getElementById('test')
 // myDiv.innerHTML = document.title
 // console.log(document.title)
+
 
 /*
    innertText // Not Standard
@@ -49,6 +52,7 @@
      Element.innerContent
 */
 
+
 // let div = document.getElementById('main')
 // console.log(div.innerHTML)
 // console.log(div.textContent)
@@ -56,18 +60,35 @@
 // console.log(div.innerHTML)
 // console.log(div.textContent)
 
+
 //  Elements - Get, Set Attribute Value
 
+
 // console.log(document.querySelector('div'))
-let myImage = document.querySelector('img')
+// let myImage = document.querySelector('img')
 
 // myImage.src = 'hhh'
 // myImage.alt = 'alt src'
 // console.log(myImage)
 // console.log(myImage.alt)
 
+
 // Elements - GetAttribute, SetAttribute
 
-myImage.setAttribute('src', 'http://placehold.it/300/300')
 
-console.log(myImage.getAttribute('src'))
+// myImage.setAttribute('src', 'http://placehold.it/300/300')
+
+// console.log(myImage.getAttribute('src'))
+
+
+// Elements - HasAttribute, RemoveAttribute
+
+
+// if (myImage.hasAttribute('alt')) {
+//     console.log("yes has ")
+//     if (myImage.alt == '') {
+//         myImage.setAttribute('alt', 'new attribute')
+//     }
+// } else {
+//     console.log('no not has attriblue')
+// }
