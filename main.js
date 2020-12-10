@@ -259,6 +259,7 @@ for (let index = 0; index < 10; index++) {
     // create li
     let li = document.createElement('li')
 
+    // add Styling
     li.style.padding = '20px'
     li.style.border = '1px solid blue'
 
@@ -273,3 +274,16 @@ for (let index = 0; index < 10; index++) {
 
 }
 console.log(ul)
+
+// Events - How To Write All Methods
+
+let button = document.getElementById('btn')
+
+function changeBorder() {
+    ul.style.border = '1px solid green'
+    document.querySelector('button').style.width = '100px'
+    document.querySelector('button').style.padding = '10px'
+}
+
+// on click call the function
+document.getElementById('btn').onclick = changeBorder
