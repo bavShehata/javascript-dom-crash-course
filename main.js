@@ -287,3 +287,17 @@ function changeBorder() {
 
 // on click call the function
 document.getElementById('btn').onclick = changeBorder
+
+// Events - Onload, Onscroll, Onresize
+
+window.onload = function() {
+    console.log("Dom is Ready")
+}
+
+window.onscroll = function() {
+    console.log("You are Scrolling now")
+}
+
+window.onresize = function() {
+    console.log("You are resizeing now")
+}
