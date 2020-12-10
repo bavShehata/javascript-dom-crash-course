@@ -319,3 +319,13 @@ input.onblur = function() {
     } else
         notes.textContent = "its strong password welcome"
 }
+
+// Events - OnClick, OnDblClick, OnMousEnter
+
+input.onclick = function() {
+    notes.textContent = "You Click on the element"
+}
+
+input.ondblclick = function() {
+    notes.textContent = "You  double Click on the element"
+}
