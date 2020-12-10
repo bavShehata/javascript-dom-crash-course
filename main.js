@@ -202,7 +202,13 @@ let mainDiv = document.getElementById('main')
 
 // Elements - Style
 
-mainDiv.style.background = 'lightBlue'
-mainDiv.style.fontSize = '22px'
-mainDiv.style.color = "#000"
-document.querySelector('button').style.fontSize = '22px'
+// mainDiv.style.background = 'lightBlue'
+// mainDiv.style.fontSize = '22px'
+// mainDiv.style.color = "#000"
+// document.querySelector('button').style.fontSize = '22px'
+
+// - Document - InputEncoding, LastModified, Url
+
+// console.log(document.inputEncoding)
+// console.log(document.lastModified)
+// console.log(document.URL)
