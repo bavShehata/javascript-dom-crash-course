@@ -172,5 +172,11 @@ let mainDiv = document.getElementById('main')
 
 
 // Elements - Parent Element
-console.log(mainDiv.parentNode)
-console.log(mainDiv.parentElement.tagName)
+
+// console.log(mainDiv.parentNode)
+// console.log(mainDiv.parentElement.tagName)
+
+// Elements - Next, Previous Sibling
+
+console.log(mainDiv.childNodes[1].nextSibling)
+console.log(mainDiv.childNodes[1].nextElementSibling)
