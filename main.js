@@ -124,34 +124,41 @@
 
 
 // Get the mainDiv Div
-let mainDiv = document.getElementById('main')
+// let mainDiv = document.getElementById('main')
 
-// Create div  element
-let newElement = document.createElement('div')
+// // Create div  element
+// let newElement = document.createElement('div')
 
-// Create Text Node 
-let text = document.createTextNode("Hello new text Node")
+// // Create Text Node 
+// let text = document.createTextNode("Hello new text Node")
 
 // Create new Paragaraph element
-let newParagraph = document.createElement('p')
+// let newParagraph = document.createElement('p')
 
-// Append Tparagraph To The NewElement Div
-newElement.appendChild(newParagraph)
+// // Append Tparagraph To The NewElement Div
+// newElement.appendChild(newParagraph)
 
-// Append Text To The NewElement Div
-newElement.appendChild(text)
+// // Append Text To The NewElement Div
+// newElement.appendChild(text)
 
 // Append newElement Div to the main Div
-mainDiv.appendChild(newElement)
+// mainDiv.appendChild(newElement)
 
-mainDiv.insertBefore(newParagraph, mainDiv.firstElementChild)
+// mainDiv.insertBefore(newParagraph, mainDiv.firstElementChild)
 
-mainDiv.insertBefore(newParagraph, mainDiv.firstElementChild)
+// mainDiv.insertBefore(newParagraph, mainDiv.firstElementChild)
 
-// mainDiv.appendChild(newParagraph)
+// // mainDiv.appendChild(newParagraph)
 
-console.log(mainDiv.innerHTML)
-console.log(mainDiv.textContent)
+// console.log(mainDiv.innerHTML)
+// console.log(mainDiv.textContent)
 
 
 //  Elements - Children - Insert Before
+// Elements - Children - Remove Child
+
+// let mainDiv = document.getElementById('main')
+// console.log(mainDiv)
+// console.log(mainDiv.innerHTML)
+// console.log(mainDiv.textContent)
+// mainDiv.removeChild(mainDiv, childNodes[3])
