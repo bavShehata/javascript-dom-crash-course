@@ -182,3 +182,5 @@ let mainDiv = document.getElementById('main')
 // console.log(mainDiv.childNodes[1].nextElementSibling)
 
 //  Elements - Focus, Blur
+//  Elements - Click
+//  Elements - Add Event Listener
