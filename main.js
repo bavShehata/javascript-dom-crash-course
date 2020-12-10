@@ -166,4 +166,6 @@ let mainDiv = document.getElementById('main')
 
 //  Elements - Node [ Name, Value, Type ]
 
-console.log(mainDiv.childNodes[3].tagName)
+// console.log(mainDiv.childNodes[3].tagName)
+
+// Elements - Clone Node
