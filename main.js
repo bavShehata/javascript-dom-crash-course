@@ -189,3 +189,10 @@ let mainDiv = document.getElementById('main')
 
 // let span = document.querySelector('span')
 // console.log(mainDiv.contains(span))
+
+// Elements - Client [ Height, Width ]
+// Elements - Scroll [ Height, Width ]
+// Elements - Offset [ Height, Width ]
+
+// console.log(mainDiv.clientHeight)
+// console.log(mainDiv.clientWidth)
