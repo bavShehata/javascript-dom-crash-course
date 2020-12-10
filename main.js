@@ -214,6 +214,7 @@ let mainDiv = document.getElementById('main')
 // console.log(document.URL)
 
 //  Document - Create [ Element, Text, Comment ]
+// Document - Create Attribute
 
 // create the main element
 let myElement = document.createElement('div')
@@ -228,6 +229,12 @@ let myText = document.createTextNode('this div been Created by js')
 let comment1 = document.createComment('this is comment 1')
 let comment2 = document.createComment('this is comment 2')
 
+// create class attribute
+let classAttribute = document.createAttribute('class')
+
+// add attribute value
+classAttribute.value = 'newClass'
+
 // Add the comment to the element
 myElement.appendChild(comment1)
 
@@ -236,6 +243,10 @@ myElement.appendChild(myText)
 
 // Add the comment to the element
 myElement.appendChild(comment2)
+
+// add Attribut to element
+myElement.setAttributeNode(classAttribute)
+
 
 // get ul
 let ul = document.getElementById('ulId')
