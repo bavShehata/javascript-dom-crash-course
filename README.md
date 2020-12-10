@@ -2,7 +2,7 @@
 
 this repository for JavaScript DOM Crash Course 
 
-where in the Final Project I build simple interface using vanilla javascrip
+Where in the Final Project build simple interface using vanilla javascrip
 
 
 # Click the link blow to see the interface (GitHub Pages)
