@@ -169,3 +169,8 @@ let mainDiv = document.getElementById('main')
 // console.log(mainDiv.childNodes[3].tagName)
 
 // Elements - Clone Node
+
+
+// Elements - Parent Element
+console.log(mainDiv.parentNode)
+console.log(mainDiv.parentElement.tagName)
