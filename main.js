@@ -329,3 +329,9 @@ input.onclick = function() {
 input.ondblclick = function() {
     notes.textContent = "You  double Click on the element"
 }
+
+//  Events - OnKey [ Up, Down, Press ]
+
+input.onkeyup = function() {
+    notes.textContent = this.value;
+}
