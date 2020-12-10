@@ -16,7 +16,6 @@
 // myDiv[0].innerHTML = 'test with Javscript'
 // myDiv[1].innerHTML = 'test with Javscript'
 
-
 // [4] -  document.querySelectorAll
 // Not Compatible With IE 8
 
@@ -26,8 +25,7 @@
 // myElement[0].innerHTML = 'Changed by javascript second test'
 
 
-// Object Collection 
-
+// Object Collection
 
 // [5] -  document.title
 // [6] - document.images
@@ -39,16 +37,15 @@
 // myDiv.innerHTML = document.title
 // console.log(document.title)
 
-
 /*
    innertText // Not Standard
    outerText // Not Standard
    innerHTML
    textContent
-   // Get HTML Content 
+   // Get HTML Content
      Element.innerHTML
 
-     // Get text Content 
+     // Get text Content
      Element.innerContent
 */
 
@@ -60,9 +57,7 @@
 // console.log(div.innerHTML)
 // console.log(div.textContent)
 
-
 //  Elements - Get, Set Attribute Value
-
 
 // console.log(document.querySelector('div'))
 // let myImage = document.querySelector('img')
@@ -72,17 +67,13 @@
 // console.log(myImage)
 // console.log(myImage.alt)
 
-
 // Elements - GetAttribute, SetAttribute
-
 
 // myImage.setAttribute('src', 'http://placehold.it/300/300')
 
 // console.log(myImage.getAttribute('src'))
 
-
 // Elements - HasAttribute, RemoveAttribute
-
 
 // if (myImage.hasAttribute('alt')) {
 //     console.log("yes has ")
@@ -119,9 +110,7 @@
 // console.log(document.body.lastChild)
 // console.log(document.body.lastElementChild)
 
-
 // Elements - Children - Append Child
-
 
 // Get the mainDiv Div
 // let mainDiv = document.getElementById('main')
@@ -129,7 +118,7 @@
 // // Create div  element
 // let newElement = document.createElement('div')
 
-// // Create Text Node 
+// // Create Text Node
 // let text = document.createTextNode("Hello new text Node")
 
 // Create new Paragaraph element
@@ -152,7 +141,6 @@
 
 // console.log(mainDiv.innerHTML)
 // console.log(mainDiv.textContent)
-
 
 //  Elements - Children - Insert Before
 // Elements - Children - Remove Child
@@ -222,7 +210,7 @@ let myElement = document.createElement('div')
 // Append to body
 document.body.appendChild(myElement)
 
-// create tex node 
+// create tex node
 let myText = document.createTextNode('this div been Created by js')
 
 // create comment
@@ -238,7 +226,7 @@ classAttribute.value = 'newClass'
 // Add the comment to the element
 myElement.appendChild(comment1)
 
-// Add the text to my element 
+// Add the text to my element
 myElement.appendChild(myText)
 
 // Add the comment to the element
