@@ -135,7 +135,6 @@ let text = document.createTextNode("Hello new text Node")
 // Create new Paragaraph element
 let newParagraph = document.createElement('p')
 
-
 // Append Tparagraph To The NewElement Div
 newElement.appendChild(newParagraph)
 
@@ -145,7 +144,14 @@ newElement.appendChild(text)
 // Append newElement Div to the main Div
 mainDiv.appendChild(newElement)
 
-mainDiv.appendChild(newParagraph)
+mainDiv.insertBefore(newParagraph, mainDiv.firstElementChild)
+
+mainDiv.insertBefore(newParagraph, mainDiv.firstElementChild)
+
+// mainDiv.appendChild(newParagraph)
 
 console.log(mainDiv.innerHTML)
 console.log(mainDiv.textContent)
+
+
+//  Elements - Children - Insert Before
