@@ -196,3 +196,6 @@ let mainDiv = document.getElementById('main')
 
 // console.log(mainDiv.clientHeight)
 // console.log(mainDiv.clientWidth)
+
+// Elements - Scroll [ Top, Left ]
+// Elements - Client [ Top, Left ]
