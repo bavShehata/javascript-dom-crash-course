@@ -112,9 +112,40 @@
 // - Elements - Children - First & Last Child [ Element ]
 
 // let body = document.body.childNodes;
-console.log(document.body.children)
-console.log(document.body.children[1].textContent)
-console.log(document.body.children[0].innerHTML)
-console.log(document.body.firstChild)
-console.log(document.body.lastChild)
-console.log(document.body.lastElementChild)
+// console.log(document.body.children)
+// console.log(document.body.children[1].textContent)
+// console.log(document.body.children[0].innerHTML)
+// console.log(document.body.firstChild)
+// console.log(document.body.lastChild)
+// console.log(document.body.lastElementChild)
+
+
+// Elements - Children - Append Child
+
+
+// Get the mainDiv Div
+let mainDiv = document.getElementById('main')
+
+// Create div  element
+let newElement = document.createElement('div')
+
+// Create Text Node 
+let text = document.createTextNode("Hello new text Node")
+
+// Create new Paragaraph element
+let newParagraph = document.createElement('p')
+
+
+// Append Tparagraph To The NewElement Div
+newElement.appendChild(newParagraph)
+
+// Append Text To The NewElement Div
+newElement.appendChild(text)
+
+// Append newElement Div to the main Div
+mainDiv.appendChild(newElement)
+
+mainDiv.appendChild(newParagraph)
+
+console.log(mainDiv.innerHTML)
+console.log(mainDiv.textContent)
