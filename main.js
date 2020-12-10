@@ -107,3 +107,14 @@
 // }
 
 // console.log(button)
+
+//  Elements - Children - ChildNodes
+// - Elements - Children - First & Last Child [ Element ]
+
+// let body = document.body.childNodes;
+console.log(document.body.children)
+console.log(document.body.children[1].textContent)
+console.log(document.body.children[0].innerHTML)
+console.log(document.body.firstChild)
+console.log(document.body.lastChild)
+console.log(document.body.lastElementChild)
