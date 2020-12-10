@@ -301,3 +301,21 @@ window.onscroll = function() {
 window.onresize = function() {
     console.log("You are resizeing now")
 }
+
+// Events - Onfocus, OnBlur, OnSubmit
+
+document.querySelector('form').style.margin = '20px'
+let notes = document.getElementById('notes')
+let input = document.getElementById('input')
+
+input.onfocus = function() {
+    notes.textContent = "Write Strong Password"
+}
+console.log(input.value.length)
+
+input.onblur = function() {
+    if (input.value.length < 10) {
+        notes.textContent = "Your password must be more than 10 charater"
+    } else
+        notes.textContent = "its strong password welcome"
+}
