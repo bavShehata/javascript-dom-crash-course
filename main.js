@@ -199,3 +199,10 @@ let mainDiv = document.getElementById('main')
 
 // Elements - Scroll [ Top, Left ]
 // Elements - Client [ Top, Left ]
+
+// Elements - Style
+
+mainDiv.style.background = 'lightBlue'
+mainDiv.style.fontSize = '22px'
+mainDiv.style.color = "#000"
+document.querySelector('button').style.fontSize = '22px'
