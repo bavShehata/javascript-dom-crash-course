@@ -157,8 +157,13 @@
 //  Elements - Children - Insert Before
 // Elements - Children - Remove Child
 
-// let mainDiv = document.getElementById('main')
+let mainDiv = document.getElementById('main')
+
 // console.log(mainDiv)
 // console.log(mainDiv.innerHTML)
 // console.log(mainDiv.textContent)
 // mainDiv.removeChild(mainDiv, childNodes[3])
+
+//  Elements - Node [ Name, Value, Type ]
+
+console.log(mainDiv.childNodes[3].tagName)
