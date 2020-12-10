@@ -184,3 +184,8 @@ let mainDiv = document.getElementById('main')
 //  Elements - Focus, Blur
 //  Elements - Click
 //  Elements - Add Event Listener
+
+//   Elements - Contains
+
+// let span = document.querySelector('span')
+// console.log(mainDiv.contains(span))
