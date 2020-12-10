@@ -212,3 +212,53 @@ let mainDiv = document.getElementById('main')
 // console.log(document.inputEncoding)
 // console.log(document.lastModified)
 // console.log(document.URL)
+
+//  Document - Create [ Element, Text, Comment ]
+
+// create the main element
+let myElement = document.createElement('div')
+
+// Append to body
+document.body.appendChild(myElement)
+
+// create tex node 
+let myText = document.createTextNode('this div been Created by js')
+
+// create comment
+let comment1 = document.createComment('this is comment 1')
+let comment2 = document.createComment('this is comment 2')
+
+// Add the comment to the element
+myElement.appendChild(comment1)
+
+// Add the text to my element 
+myElement.appendChild(myText)
+
+// Add the comment to the element
+myElement.appendChild(comment2)
+
+// get ul
+let ul = document.getElementById('ulId')
+ul.style.width = '400px'
+ul.style.background = 'skyBlue'
+
+
+for (let index = 0; index < 10; index++) {
+
+    // create li
+    let li = document.createElement('li')
+
+    li.style.padding = '20px'
+    li.style.border = '1px solid blue'
+
+    //create text node
+    let liText = document.createTextNode("LI Number : " + (index + 1))
+
+    // Append text node  to the li
+    li.appendChild(liText)
+
+    // Append li to the list
+    ul.appendChild(li)
+
+}
+console.log(ul)
