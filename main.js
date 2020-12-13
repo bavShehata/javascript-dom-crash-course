@@ -1,3 +1,12 @@
+/* Module 4: DOM-inate with JavaScript */
+
+// document.dir(document.getElementById('ID Name'))
+// What is DOM and why do we need it?
+// Document Object Model (DOM)
+
+// this will show as all the properties and Event with
+// the element by that ID Name
+
 // [1] - document.getElementById ()
 
 // let myDiv = document.getElementById('test')
@@ -83,7 +92,6 @@
 // } else {
 //     console.log('no not has attriblue')
 // }
-
 
 // Elements - ClassList [ Item, Contains, Length ]
 
@@ -323,3 +331,17 @@ input.ondblclick = function() {
 input.onkeyup = function() {
     notes.textContent = this.value;
 }
+
+// function to Iterate over the dom
+
+function domEvens() {
+  for (let i = 0; i < document.body.children.length; i++) {
+  // console.log(document.body.children[i]);
+  // console.log(document.body.childNodes[i])
+  // console.log(document.body.children[i].innerHTML)
+  console.log(document.body.children[i].textContent)
+  }
+}
+
+//  function Call
+domEvens()
